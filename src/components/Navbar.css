@@ -1,0 +1,141 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.navbar {
+  font-family:"Rubik";
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9); 
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+  color: #333;
+}
+
+.navbar-brand {
+  font-family: "Protest Revolution", system-ui;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  margin-right:65px;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.nav-link,
+.login-button,
+.register-button {
+  font-family:"Rubik";
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-container, .register-container {
+  position: relative;
+}
+
+.popup {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  position: absolute;
+  top: 150%; /* Increase this value to move the popup further down */
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(120deg, #dfe9f3 0%, #ffffff 100%);
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 250px;
+}
+
+.popup::after {
+  content: '';
+  position: absolute;
+  bottom: 100%; /* Position the arrow above the popup */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  border-width: 8px; /* Size of the triangle */
+  border-style: solid;
+  border-color: transparent transparent #B2E3D3 transparent; /* Triangle matches the popup background */
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup label {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.popup input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.popup button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
+
+/* Switch to Register Link */
+.switch-to-register {
+  color: grey;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.switch-to-register a {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.switch-to-register a:hover {
+  color: #0056b3;
+}

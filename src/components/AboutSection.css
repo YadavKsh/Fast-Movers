@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.about-section {
+  display: flex; /* Enables horizontal layout */
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top:100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.description {
+  font-family: "Varela Round", sans-serif;
+  max-width: 50%; /* Adjust the text container width */
+  padding-right: 1rem; /* Add padding for spacing */
+}
+
+.description h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.description p {
+  font-family: "Rubik";
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.logo {
+  max-width: 40%; /* Adjust the logo size */
+  text-align: right;
+}
+
+.logo img {
+  width: 100%; /* Ensures the logo fits within the container */
+  max-width: 500px; /* Limit the logo's size */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded edges for the logo */
+}
